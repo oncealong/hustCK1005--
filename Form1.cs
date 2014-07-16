@@ -20,13 +20,13 @@ namespace 百度API翻译
         {
             InitializeComponent();
         }
-        private Dictionary<string, string> NowLanguage = new Dictionary<string, string>();
-        //NowLanguage.Add
-        private Dictionary<string, string> TargetLanguage = new Dictionary<string, string>();
+        //private Dictionary<string, string> NowLanguage = new Dictionary<string, string>();
+        ////NowLanguage.Add
+        //private Dictionary<string, string> TargetLanguage = new Dictionary<string, string>();
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Dictionary<string, string> NowLanguage = new Dictionary<string, string>();
+            var NowLanguage = new Dictionary<string, string>();
             NowLanguage.Add("auto", "自动翻译");
             NowLanguage.Add("zh", "简体中文");
             NowLanguage.Add("en", "英语");
@@ -43,7 +43,7 @@ namespace 百度API翻译
             NowLanguage.Add("pt", "葡萄牙语");
             NowLanguage.Add("wyw", "文言文");
 
-            Dictionary<string, string> TargetLanguage = new Dictionary<string, string>();
+            var TargetLanguage = new Dictionary<string, string>();
             TargetLanguage = NowLanguage;
             cboNowLanguage.DataSource = new BindingSource(NowLanguage, null);
             cboNowLanguage.DisplayMember = "value";

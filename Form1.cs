@@ -21,7 +21,7 @@ namespace 百度API翻译
             InitializeComponent();
         }
         //private Dictionary<string, string> NowLanguage = new Dictionary<string, string>();
-        ////NowLanguage.Add
+        //NowLanguage.Add
         //private Dictionary<string, string> TargetLanguage = new Dictionary<string, string>();
 
         private void Form1_Load(object sender, EventArgs e)
